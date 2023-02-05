@@ -217,6 +217,8 @@ resource "aws_instance" "Altschool3" {
   }
 }
 
+ provisioner "remote-exec" {inline = ["echo 'wait until SSH is ready'"]
+
 # Create a file to store the IP addresses of the Instances
 
 resource "local_file" "Ip_address" {
