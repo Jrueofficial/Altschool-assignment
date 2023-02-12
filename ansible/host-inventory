@@ -1,0 +1,8 @@
+[all]
+  18.206.120.53
+  54.221.78.38
+  54.164.201.4
+  [all:vars]
+  ansible_user=ubuntu
+  ansible_ssh_private_key_file=../ansible/Lekan.pem
+  ansible_ssh_common_args='-o StrictHostKeyChecking=no'
