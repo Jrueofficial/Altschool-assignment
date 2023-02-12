@@ -222,7 +222,7 @@ resource "aws_instance" "Altschool3" {
 # Create a file to store the IP addresses of the Instances
 
 resource "local_file" "Ip_address" {
-  filename = "/vagrant/terraform-assignment/host-inventory"
+  filename = "/home/vagrant/host-inventory"
   content  =  <<EOT
 ${aws_instance.Altschool1.public_ip}
 ${aws_instance.Altschool2.public_ip}
